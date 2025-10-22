@@ -41,7 +41,7 @@ jobs:
         with:
           url: https://api.render.com/deploy/srv-d3sahlruibrs73eq0j5g
           method: POST
-          bearerToken: ${{ secrets.RENDER_API_KEY }}
-          customHeaders: '{"Content-Type": "application/json"}'
+          customHeaders: '{"Authorization": "Bearer ${{ secrets.RENDER_API_KEY }}", "Content-Type": "application/json"}'
           data: '{"force":true}'
+
 
